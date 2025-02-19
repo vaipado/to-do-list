@@ -22,7 +22,7 @@ $(function () {
 
     // Função para alternar tema
     function toggleTheme() {
-        $body.toggleClass("dark-mode");
+        $body.toggleClass("dark-mode-body");
         $container.toggleClass("dark-mode");
         $categorySelect.toggleClass("dark-mode-select");
         $addTaskBtn.toggleClass("dark-mode-select");
@@ -32,7 +32,7 @@ $(function () {
     // Carregar tema do localStorage
     function loadTheme() {
         if (localStorage.getItem("darkMode") === "true") {
-            $body.addClass("dark-mode");
+            $body.addClass("dark-mode-body");
             $container.addClass("dark-mode");
             $categorySelect.addClass("dark-mode-select");
             $addTaskBtn.addClass("dark-mode-select");
